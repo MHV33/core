@@ -22,7 +22,7 @@ async def sl_setup(hass):
 
     entry = MockConfigEntry(domain="shopping_list")
     entry.add_to_hass(hass)
-
+    # test commit
     assert await hass.config_entries.async_setup(entry.entry_id)
 
     await sl_intent.async_setup_intents(hass)
